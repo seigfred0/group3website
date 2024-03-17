@@ -11,7 +11,7 @@ body {
     background-color: #0E0E0E;
 }
 
-.line1 {
+/* .line1 {
     animation: lineDraw 3s once;
 }
 
@@ -27,4 +27,4 @@ body {
     100% { 
         left: 0; 
     } 
-} 
+}  */

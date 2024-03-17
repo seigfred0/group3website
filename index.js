@@ -7,12 +7,17 @@ const customMethods = {
     fadeInText: (element) => {
         animate(element, { opacity: [0, 0.5, 1]}, {duration: 4})
     },
+    moveUpText: (x) => {
+        animate(x, { transform: 'translateY(-2em)'}, { duration: 2})
+
+    }
 
 }
 
 // animate(".title-one", { opacity: [0, 0.5, 1]}, {duration: 4.5})
 
 customMethods.fadeInText('.title-one')
+customMethods.moveUpText('.paragraph-one')
 
 
 // animate('.line1', { opacity: [0, 1]})
