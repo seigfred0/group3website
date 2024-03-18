@@ -17,6 +17,13 @@ body {
 }
 
 
+/* .language-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3em;
+} */
+
 
 /* .line1 {
     animation: lineDraw 3s once;
