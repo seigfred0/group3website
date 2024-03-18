@@ -128,21 +128,93 @@
     background: #454545; 
 }
 
-/* @keyframes animate { 
-    0% { 
+.line3 {
+    transform: rotate(55deg);
+    width: 920px;
+    left: 15em;
+    z-index: 10;
+    top: 26em;
+}
+
+/* animation triggers immediately after the reload, need to fix */
+.animateLine-three {
+   
+    background-color: rgba(177, 177, 177, 0); 
+    display: none;
+}
+
+
+.animateLine-three::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: animate 5s ease ;
+
+    background: #454545; 
+}
+
+.line4 {
+    transform: rotate(90deg);
+    width: 300px;
+    left: 5.4em;
+    z-index: 10;
+    top: 9.5em;
+
+    position: relative;
+}
+
+.animateLine-four {
+   
+    background-color: rgba(177, 177, 177, 0); 
+    display: none;
+}
+
+
+.animateLine-four::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    
+    animation: animate 4s ease ;
+
+    background: #454545; 
+}
+/* .animateLine-four {
+   
+    background-color: rgba(177, 177, 177, 0); 
+    display: none;
+} */
+
+/* animation triggers immediately after the reload, need to fix */
+
+/* .animateLine-three-four::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: animate 5s ease ;
+
+    background: #454545; 
+} */
+
+@keyframes animateTwo { 
+    100% { 
         width: 100%; 
         left: 0;
     } 
     
-    100% { 
+    0% { 
        
         width: 0;
     } 
-}  */
+} 
 @keyframes animate { 
     0% { 
-        width: 0; /* Start from width 0 */
-        left: 0; /* Start from the left edge */
+        width: 0; 
+        left: 0;
     } 
 
     100% { 
@@ -201,13 +273,7 @@
     top: -0.85em;
 }
 
-.line3 {
-    transform: rotate(55deg);
-    width: 920px;
-    left: 15em;
-    z-index: 10;
-    top: 26em;
-}
+
 
 .circle2 {
     width: 32px; 
@@ -254,6 +320,7 @@
 
 .second-card_text h1{
     text-align: right;
+    
 }
 
 .second-card_text p{
@@ -297,21 +364,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .third-card  {
     z-index: 5;
     position: relative;
@@ -334,15 +386,7 @@
     margin: 0 auto;
 }
 
-.line4 {
-    transform: rotate(90deg);
-    width: 300px;
-    left: 5.4em;
-    z-index: 10;
-    top: 9.5em;
 
-    position: relative;
-}
 
 
 .circle3 {
@@ -364,8 +408,17 @@
     color: #725353;
 
     margin-top: 15em;
+
+    
 }
 
+.card-title_three{
+    display: none;
+}
+
+.card-text_three {
+    display: none;
+}
 
 
 .third-card_text p {
