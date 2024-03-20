@@ -75,12 +75,12 @@
 
 
 .python-container {
-    background-color: gray; 
+    /* background-color: gray;  */
     display: flex;
     max-width: 1200px;
     padding: 20px;
 
-    margin: 50px auto;
+    margin: 200px auto;
 }
 
 .python-text {
@@ -116,9 +116,44 @@
     width: 490px;
     height: 350px;
 
-    border-radius: 25px;
+    /* border-radius: 25px; */
+    border-top-right-radius: 25px;
     background-image: linear-gradient(to bottom, #efddf7,#efddf7a7,#efddf732, #15151600);
+
+  
 }
+
+.python-video { 
+    position: relative;
+    z-index: 10;
+}
+
+.divLang {
+    position: relative;
+    margin-right: 3.5em;
+}
+
+
+.python-circle{
+    width: 138px;
+    height: 138px;
+    background-image: linear-gradient(to bottom, #efddf7 , #e7e4e8);
+    box-shadow: #efddf7  0 -10px 100px 5px;
+
+    border-radius: 50%;
+    position: absolute;
+
+    
+
+    left: -55px;
+    top: -3em;
+    z-index: 1;
+}
+
+
+
+
+
 /* javascript */
 
 .javascript-container {
