@@ -1,0 +1,133 @@
+.box {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    
+
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 320px;
+    border-radius: 10px;
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.text {
+    /* border: 1px solid white; */
+    color: rgb(240, 240, 240)
+}
+
+.top {
+    display: flex;
+    gap: 1em;
+}
+
+.b1 {
+    flex: 0.5fr;
+    width: 30%;
+
+    background-image: url('/assets/bsisPic1.jpg');
+    background-size: cover;
+}
+
+.b2 {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    text-align: right;
+    font-family: "Abril Fatface", serif;
+
+    letter-spacing: 5px;
+    font-size: 3.5rem;
+
+   
+}
+
+.b3 {
+    display: flex;
+    align-items: center;    
+    letter-spacing: 7px;
+    line-height: 30px;
+    padding-left: 15px;
+    border-left: 4px solid rgb(216, 216, 216);
+    width: 35%;
+
+  
+}
+
+.bottom {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.b4 {
+    flex: 1.5fr;
+    width: 25%;
+    transition: width 2s;
+    background-image: url('/assets/bsisPic2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.b4:hover {
+    width: 40%;
+   
+}
+
+.b5 {
+    flex: 2fr;
+    width: 50%;
+    transition: width 2s;
+
+   
+    background-image: url('/assets/bsisPic4.jpg');
+    background-size: cover;
+}
+
+.b5:hover {
+    width: 60%;
+   
+}
+
+.b6 {
+    display: 1fr;
+    width: 30%;
+    transition: width 2s;
+
+    background-image: url('/assets/bsisPic3.jpg');
+    background-size: cover;
+}
+
+.b6:hover {
+    width: 50%;
+   
+}
+
+.shade {
+    position: relative;
+    overflow: hidden;
+}
+
+.dark-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black layer */
+    opacity: 1; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition on opacity change */
+}
+
+.dark-layer:hover {
+    opacity: 0;
+}

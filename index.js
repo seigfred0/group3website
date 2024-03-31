@@ -2,7 +2,6 @@
 import { animate, inView } from "motion";
 
 
-
 const customMethods = {
     fadeInText: (element) => {
         animate(element, { opacity: [0, 0.5, 1]}, {duration: 4})
@@ -12,8 +11,6 @@ const customMethods = {
 
     },
 }
-
-
 customMethods.fadeInText('.title-one')
 customMethods.moveUpText('.paragraph-one')
 
@@ -61,6 +58,23 @@ inView(".second-card", (info) => {
     )
 })
 
+// --------------------------------- //
+
+// Languages Section Animation
+
+// --------------------------------- //
 
 
-// scroll(animate("section", { opacity: [0, 1] }))
+inView(".java-container", () => {
+    customMethods.fadeInText('.java-container')
+    // animate('.javaCode', { translateX: '50px'} , { duration: 2 })
+})
+
+
+inView(".python-container", () => {
+    customMethods.fadeInText('.python-container')
+})
+
+inView(".javascript-container", () => {
+    customMethods.fadeInText('.javascript-container')
+})

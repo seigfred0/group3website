@@ -1,6 +1,8 @@
 @import url('./css-components/nav.css');
 @import url('./css-components/cards-section.css');
 @import url("./css-components/black-container.css");
+@import url('./css-components/pictures-container.css');
+@import url('./css-components/footer.css');
 
 html {
     scroll-behavior: smooth; 
@@ -16,6 +18,15 @@ body {
     background-color: #0E0E0E;
 }
 
+img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.pictures-container {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
 
 /* .language-container {
     display: flex;
@@ -42,3 +53,5 @@ body {
         left: 0; 
     } 
 }  */
+
+
